@@ -48,7 +48,7 @@ target_compile_features(dircGR_app PRIVATE ${CHOSEN_FEATURE})
 #---- Target-level properties configuration
 set_target_properties(dircGR_app PROPERTIES
     LINK_FLAGS "${ROOT_EXE_LINKER_FLAGS}"
-    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/.."
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../run/"
 )
 
 #---- Link dependences 
