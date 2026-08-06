@@ -31,11 +31,6 @@ string(REGEX REPLACE "-std=[^ ]+" "" ROOT_CXX_FLAGS_CLEAN "${ROOT_CXX_FLAGS}")
 #---- Define executable with proper header file tracking
 set(HEADER_FILES
     dircGR.h
-    tcutL0_.h
-    tcutL1_.h
-    tcutU0_.h
-    tcutU1_.h
-    cosangtmin.h   
     cosangupper.h   
     cosanglower.h   
 )
