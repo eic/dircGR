@@ -113,16 +113,16 @@ void dircGR::Loop(){
 	fTimeCut2U->SetLineColor(kOrange+8);	fTimeCut2L->SetLineColor(kOrange+8);
 	//
 	//---- read limits from bands.C...
-	TString bandfile	= TString("./bands.root");
-	TFile* fBand		= new TFile(bandfile.Data(),"read");
-	for (int izd=0;izd<2;izd++){
-		gtcutL[izd]	= (TGraph*)fBand->Get(Form("gtcutL_%d",izd));	// earliest time vs Zinc (as OPcr_z)
-		gtcutL[izd]	->SetName(Form("gtcutL_%d",izd));
-		gtcutU[izd]	= (TGraph*)fBand->Get(Form("gtcutU_%d",izd));	// latest time vs Zinc (as OPcr_z) for some MIN cos(theta)
-		gtcutU[izd]	->SetName(Form("gtcutU_%d",izd));
-	}
-	fBand->Close();
-	delete fBand; fBand=0;
+	//TString bandfile	= TString("./bands.root");
+	//TFile* fBand		= new TFile(bandfile.Data(),"read");
+	//for (int izd=0;izd<2;izd++){
+	//	gtcutL[izd]	= (TGraph*)fBand->Get(Form("gtcutL_%d",izd));	// earliest time vs Zinc (as OPcr_z)
+	//	gtcutL[izd]	->SetName(Form("gtcutL_%d",izd));
+	//	gtcutU[izd]	= (TGraph*)fBand->Get(Form("gtcutU_%d",izd));	// latest time vs Zinc (as OPcr_z) for some MIN cos(theta)
+	//	gtcutU[izd]	->SetName(Form("gtcutU_%d",izd));
+	//}
+	//fBand->Close();
+	//delete fBand; fBand=0;
 
 
 	//---- book....
@@ -690,14 +690,14 @@ void dircGR::Loop(){
 								}
 							}
 							//
-							if(iamb==0){ AMBdir[iamb]	= TVector3(  OPdirx,  OPdiry,  OPdirz ); }  // original path
-							if(iamb==1){ AMBdir[iamb]	= TVector3( -OPdirx,  OPdiry,  OPdirz ); }	// flip kx only
-							if(iamb==2){ AMBdir[iamb]	= TVector3(  OPdirx, -OPdiry,  OPdirz ); }	// flip ky only
-							if(iamb==3){ AMBdir[iamb]	= TVector3( -OPdirx, -OPdiry,  OPdirz ); }	// flip kx & ky
-							if(iamb==4){ AMBdir[iamb]	= TVector3(  OPdirx,  OPdiry, -OPdirz ); }	// flip kz only
-							if(iamb==5){ AMBdir[iamb]	= TVector3( -OPdirx,  OPdiry, -OPdirz ); }	// flip kx & kz
-							if(iamb==6){ AMBdir[iamb]	= TVector3(  OPdirx, -OPdiry, -OPdirz ); }	// flip ky & kz
-							if(iamb==7){ AMBdir[iamb]	= TVector3( -OPdirx, -OPdiry, -OPdirz ); }	// flip all three
+							if(iamb==0){ AMBdir[iamb]	= TVector3(  OPdirx,  OPdiry,  OPdirz ); } else	// original path
+							if(iamb==1){ AMBdir[iamb]	= TVector3( -OPdirx,  OPdiry,  OPdirz ); } else	// flip kx only
+							if(iamb==2){ AMBdir[iamb]	= TVector3(  OPdirx, -OPdiry,  OPdirz ); } else	// flip ky only
+							if(iamb==3){ AMBdir[iamb]	= TVector3( -OPdirx, -OPdiry,  OPdirz ); } else	// flip kx & ky
+							if(iamb==4){ AMBdir[iamb]	= TVector3(  OPdirx,  OPdiry, -OPdirz ); } else	// flip kz only
+							if(iamb==5){ AMBdir[iamb]	= TVector3( -OPdirx,  OPdiry, -OPdirz ); } else	// flip kx & kz
+							if(iamb==6){ AMBdir[iamb]	= TVector3(  OPdirx, -OPdiry, -OPdirz ); } else	// flip ky & kz
+							if(iamb==7){ AMBdir[iamb]	= TVector3( -OPdirx, -OPdiry, -OPdirz ); }		// flip all three
 							//
 							//---- loop over NHYP hypotheses and do ambiguity searching including chromatic correction
 							for (int ihyp=0;ihyp<NHYP;ihyp++){
