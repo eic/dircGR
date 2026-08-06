@@ -1,0 +1,82 @@
+
+
+time npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,-158.175*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar9_20M.edm4hep.root > bar9.out 2>&1
+
+time npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,-123.025*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar8_20M.edm4hep.root > bar8.out 2>&1
+
+time npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,-87.875*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar7_20M.edm4hep.root > bar7.out 2>&1
+
+time npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,-52.725*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar6_20M.edm4hep.root > bar6.out 2>&1
+
+npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,-17.575*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar5_20M.edm4hep.root > bar5.out 2>&1
+
+npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,17.575*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar4_20M.edm4hep.root > bar4.out 2>&1
+
+npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,52.725*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar3_20M.edm4hep.root > bar3.out 2>&1
+
+npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,87.875*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar2_20M.edm4hep.root > bar2.out 2>&1
+
+npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,123.025*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar1_20M.edm4hep.root > bar1.out 2>&1
+
+npsim --runType batch \
+--compactFile $DETECTOR_PATH/epic_dirc_only.xml -G -N 20000000 \
+--enableGun --printLevel WARNING \
+--gun.multiplicity 1 --gun.particle "opticalphoton" --gun.energy 3.18*eV \
+--gun.phiMin 0*deg --gun.phiMax 360*deg --gun.thetaMin 105*deg \
+--gun.thetaMax 180*deg --gun.distribution "cos(theta)" --gun.position 766*mm,158.175*mm,-2729*mm \
+--part.userParticleHandler='' --outputFile ./LUT/lut_bar0_20M.edm4hep.root > bar0.out 2>&1
+
