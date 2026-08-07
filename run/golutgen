@@ -1,0 +1,41 @@
+
+echo '.L lutgen.C
+lutgen gen(0)
+gen.Loop()' | root -l -b
+
+echo '.L lutgen.C
+lutgen gen(1)
+gen.Loop()' | root -l -b
+
+echo '.L lutgen.C
+lutgen gen(2)
+gen.Loop()' | root -l -b
+
+echo '.L lutgen.C
+lutgen gen(3)
+gen.Loop()' | root -l -b
+
+echo '.L lutgen.C
+lutgen gen(4)
+gen.Loop()' | root -l -b
+
+echo '.L lutgen.C
+lutgen gen(5)
+gen.Loop()' | root -l -b
+
+echo '.L lutgen.C
+lutgen gen(6)
+gen.Loop()' | root -l -b
+
+echo '.L lutgen.C
+lutgen gen(7)
+gen.Loop()' | root -l -b
+
+echo '.L lutgen.C
+lutgen gen(8)
+gen.Loop()' | root -l -b
+
+echo '.L lutgen.C
+lutgen gen(9)
+gen.Loop()' | root -l -b
+
