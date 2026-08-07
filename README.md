@@ -2,8 +2,10 @@
 
 This code does Geometric Reconstruction (GR) in npsim simulations of
 the ePIC hpDIRC. It is a standalone code that compiles and runs
-inside or outside the eic-shell, and it reads two TTrees and
-calculates thetaC (mrad) for every particle incident on hpDIRC bars.
+outside the eic-shell, after you've produced simulation rootfiles
+inside the shell. The code reads two TTrees, keeps them in sync, and
+loops through them to calculate thetaC (mrad) for every particle 
+incident on hpDIRC bars.
 This code was developed to explore the hpDIRC PID performance and to
 inform about viable approaches for doing this same reconstruction inside
 eicrecon soon. 
