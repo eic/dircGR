@@ -8,7 +8,7 @@ This code was developed to explore the hpDIRC PID performance and to
 inform about viable approaches for doing this same reconstruction inside
 eicrecon soon. 
 
-##Installation##
+## Installation
 
 Once you have a working eic-shell, first install [ddDircAction](https://github.com/eic/ddDircAction/tree/main),
 the stepping action plugin that writes the "incidence tree."
@@ -29,8 +29,7 @@ export LD_LIBRARY_PATH=/Users/wjllope/eic/ddDircAction/install/lib:${LD_LIBRARY_
 ```
 This line should be added to your local mysetup script. 
 
-To install dircGR:
-https://github.com/eic/dircGR/tree/main
+To install [dircGR](https://github.com/eic/dircGR/tree/main):
 ```
 cd ~/eic
 git clone git@github.com:eic/dircGR.git
