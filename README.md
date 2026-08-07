@@ -120,6 +120,7 @@ Pick any existing event file (these have the extension hepmc3.tree.root),
 and put it into eic/dircGR/run. Run npsim using this file as input, and remove
 all the gun commands, for example:
 ```
+#---- !!! inside eic-shell !!!
 time npsim -N 5000 --runType batch --printLevel WARNING \
 --action.step '{"name":"ddDIRCactionStep","parameter":{"OutputBase":"dis_eicBeam_hiDiv_18x275_1to10.incidence", "fileNumber":1, "DetailLevel":1}}' \
 --inputFiles dis_eicBeam_hiDiv_18x275_1to10.hepmc3.tree.root \
