@@ -137,6 +137,22 @@ and you can then run these through dircGR via:
 #---- !!! outside eic-shell !!!
 ./dircGR_app dis_eicBeam_hiDiv_18x275_1to10.edm4hep.root epic
 ```
-
+which will create:
+```
+dis_eicBeam_hiDiv_18x275_1to10.gr.pdf
+dis_eicBeam_hiDiv_18x275_1to10.gr.root
+```
+The TH2D histogram hthetaC_ptot provides a decent overview of the PID performance
+by plotting the Cherenkov angle (in mrad) versus the track momentum, for all particles
+striking any hpDIRC bar anywhere along its length. The appropriate LUT is used for
+each bar-incident particle; 20M OPs were used to calculate each LUT.
+Tight timing cuts (~1ns wide) and OP polar angle cuts
+are implemented as a function of the Z-position of the incidence. 
+The OP polar angles of prism paths
+are also required to be consistent with the allowed range of polar angles for
+hit-producing OPs created at this Z-position. 
+Chromatic corrections are applied. The thetaC resolution in the present
+code is approximately 4-6 mrad, which is close to expectations. 
+Some additional improvements to the chromatic corrections is likely possible.
 
 
