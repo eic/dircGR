@@ -8,8 +8,6 @@ This code was developed to explore the hpDIRC PID performance and to
 inform about viable approaches for doing this same reconstruction inside
 eicrecon soon. 
 
-## Installation
-
 Once you have a working eic-shell, first install [ddDircAction](https://github.com/eic/ddDircAction/tree/main),
 the stepping action plugin that writes the "incidence tree."
 To compile ddDircAction:
