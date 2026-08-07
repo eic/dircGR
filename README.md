@@ -8,6 +8,8 @@ This code was developed to explore the hpDIRC PID performance and to
 inform about viable approaches for doing this same reconstruction inside
 eicrecon soon. 
 
+## Installation
+
 Once you have a working eic-shell, first install [ddDircAction](https://github.com/eic/ddDircAction/tree/main),
 the stepping action plugin that writes the "incidence tree."
 To compile ddDircAction:
@@ -49,7 +51,7 @@ There is thus no need for you to generate LUTs. If you would like
 to do this anyway though, some helper files are also in dircGR/run, 
 feel free to contact me for additional details. 
 
-##Doing a single particle simulation##
+## Doing a single particle simulation 
 
 One mode to run npsim is the "gun", where single particles with
 specific momenta and direction can be fired from the vertex.
@@ -111,6 +113,4 @@ sim_dirconly_500evt_pi+3GeV70deg.gr.pdf
 sim_dirconly_500evt_pi+3GeV70deg.gr.root
 ```
 Note the basename is the same, and the extensions are ".gr.(pdf/root)".
-
-
 
