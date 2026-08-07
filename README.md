@@ -1,6 +1,4 @@
-# dircGR
-standalone geometric reconstruction (GR) for DIRC PID
-
+## dircGR -- standalone geometric reconstruction (GR) for DIRC PID
 
 This code does Geometric Reconstruction (GR) in npsim simulations of
 the ePIC hpDIRC. It is a standalone code that compiles and runs
@@ -12,9 +10,8 @@ eicrecon soon.
 
 ##Installation##
 
-Once you have a working eic-shell, first install ddDircAction,
+Once you have a working eic-shell, first install [ddDircAction](https://github.com/eic/ddDircAction/tree/main),
 the stepping action plugin that writes the "incidence tree."
-https://github.com/eic/ddDircAction/tree/main
 To compile ddDircAction:
 ```
 cd eic
